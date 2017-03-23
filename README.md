@@ -16,6 +16,7 @@ Working PHP 7.1.3(apache) with mariadb database, phpmyadmin and xdebug for local
 # You may want to (before running)
 - Change the random MYSQL_ROOT_PASSWORD in docker-compose.yml (on first run, this will be added to the root user in the mariadb data-volume.
 - Install the Xdebug helper plugin if you use Chrome: https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc (1 click debugging)
+- Change the php.ini settings found in projectConfig folder (it is using the standard production settings + xdebug as the only change). The production settings hides a lot of errors.
 
 # If you change the Dockerfile or docker-compose.yml:
 - Run "docker-compose build" before running "docker-compose up" again.
